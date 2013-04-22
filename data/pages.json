@@ -1,0 +1,23 @@
+{
+	"home": {
+		"title" : "Homepage",
+		"template" : "pages/home",
+		"data" : {
+			"items": [
+				{
+					"imgsrc": "http://placekitten.com/150/150"
+				}, {
+					"imgsrc": "http://placekitten.com/150/151"
+				}, {
+					"imgsrc": "http://placekitten.com/150/152"
+				}, {
+					"imgsrc": "http://placekitten.com/150/153"
+				}, {
+					"imgsrc": "http://placekitten.com/150/154"
+				}, {
+					"imgsrc": "http://placekitten.com/150/155"
+				}
+			]
+		}
+	}
+}
