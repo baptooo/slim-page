@@ -54,7 +54,7 @@ class AppCompiler {
 	 * Add js file
 	 */
 	public static function js($path) {
-		$basePath = preg_match('/http:\/\//', $path) ? '' : 'src/';
+		$basePath = preg_match('/http:\/\//', $path) ? '' : '/src/';
 		array_push(self::$js, $path);
 		echo '<script type="text/javascript" src="' . $basePath . $path . '" charset="utf-8" ></script>'. "\n";
 	}

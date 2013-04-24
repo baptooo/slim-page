@@ -19,15 +19,16 @@
 	</head>
 
 	<body>
-		<script type="text/javascript">
-			document.write('<textarea class="hidden">');
-		</script>
-		<?php echo $contents; ?>
-		<textarea class="hidden"></textarea>
+		<div class="active">
+			<script type="text/javascript">
+				document.write('<textarea class="hidden">');
+			</script>
+			<?php echo $contents; ?>
+			<textarea class="hidden"></textarea>
+		</div>
 		
 		<script type="text/javascript">
 			var viewData = <?php echo $viewData; ?>;
-			Mustache = {};
 		</script>
 		
 		<?php if($app->config('environment') == 'development'):
