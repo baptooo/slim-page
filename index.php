@@ -43,7 +43,9 @@
 		$viewData = $sectionData[$page];
 		
 		if($app->request()->isAjax()) {
-			die(json_encode($viewData));
+			die($app->render('layout/json.php', array(
+				'json' => json_encode($viewData)
+			)));
 		}
 		
 		// Mustache contents view setting
